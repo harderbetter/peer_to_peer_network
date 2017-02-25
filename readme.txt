@@ -1,0 +1,3 @@
+In peer-to-peer networks such as gnutella, each host must search out other hosts. When a host finds another host, these hosts become neighbors. Often a host will continue to search for peers until a sufficient number of hosts have been found. Let's assume that a host will continue to search for hosts until it has N neighbors.
+
+In this project, peer-to-peer neighborhoods are made and maintained. Each host maintains list of neighbors and sends hello packets to these neighbors every 10 seconds. If a host is on the neighbor list, and no hello packet is received from the host for 40 seconds, then this host is removed from the neighbor list. If a node does not have enough neighbors, then it selects an address (e.g., IP and port) at random and tries to become its neighbor.
